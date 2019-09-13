@@ -1,16 +1,16 @@
-//basic math notation of grater than
+//just saying this fucntion will say 21 is less than 10
 
-function testGreaterThan(val) {
-  if (val > 100) {  // Change this line
-    return "Over 100";
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
   }
 
-  if (val > 10) {  // Change this line
-    return "Over 10";
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
   }
 
-  return "10 or Under";
+  return "Less than 10";
 }
 
 // Change this value to test
-testGreaterThan(10);
+testGreaterOrEqual(10);

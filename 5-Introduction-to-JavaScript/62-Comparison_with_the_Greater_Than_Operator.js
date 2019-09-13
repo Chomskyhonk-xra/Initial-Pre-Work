@@ -1,17 +1,16 @@
-//!== strict inequality
+//basic math notation of grater than
 
-// Setup
-function testStrictNotEqual(val) {
-  // Only Change Code Below this Line
-
-  if (val !== 17) {
-
-  // Only Change Code Above this Line
-
-    return "Not Equal";
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
   }
-  return "Equal";
+
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
 }
 
 // Change this value to test
-testStrictNotEqual(10);
+testGreaterThan(10);

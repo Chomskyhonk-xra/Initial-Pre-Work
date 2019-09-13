@@ -6,7 +6,7 @@ function addThree() {
 
 // Only change code below this line
 function addFive(){
-  return (sum + 5);
+  sum+=5;
 }
 
 

@@ -1,20 +1,17 @@
 //assigning return values of a function
 
-// Example
-var changed = 0;
+function nextInLine(arr, item) {
+  // Your code here
+  arr.push(item); //add item to end of array
+  return arr.shift();
 
-function change(num) {
-  return (num + 5) / 3;
+  return item;  // Change this line
 }
 
-changed = change(10);
+// Test Setup
+var testArr = [1,2,3,4,5];
 
-// Setup
-var processed = 0;
-
-function processArg(num) {
-  return (num + 3) / 5;
-}
-
-// Only change code below this line
-var processed = processArg(7);
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));

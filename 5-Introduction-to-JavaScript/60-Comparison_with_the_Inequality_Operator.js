@@ -1,12 +1,12 @@
-//more strict equality
+//this != fun for someone who knows how to code javascript
 
 // Setup
-function compareEquality(a, b) {
-  if (a === b) { // Change this line
-    return "Equal";
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
   }
-  return "Not Equal";
+  return "Equal";
 }
 
 // Change this value to test
-compareEquality(10, "10");
+testNotEqual(10);

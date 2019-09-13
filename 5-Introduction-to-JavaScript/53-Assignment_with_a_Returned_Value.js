@@ -1,16 +1,20 @@
 //this is very dangerous, editing variables not local to a function without passing it through
 
 // Example
-var sum = 0;
-function addThree() {
-  sum = sum + 3;
+var changed = 0;
+
+function change(num) {
+  return (num + 5) / 3;
+}
+
+changed = change(10);
+
+// Setup
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
 }
 
 // Only change code below this line
-function addFive(){
-  sum+=5;
-}
-
-
-// Only change code above this line
-var returnedValue = addFive();
+var processed = processArg(7);
